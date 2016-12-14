@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="seriesApp">
+<head>
+    <!-- meta data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Series App</title>
+    <link rel="icon" type="/image/png" href="#">
+    <!-- CSS Standard Libraries -->                
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+    <!-- CSS modified files  -->
+  <link rel="stylesheet" type="text/css" href="/css/style-series.css">
+    <!--[if lt IE 9]>
+    <script src="js/generals/html5shiv.min.js"></script>
+    <script src="js/generals/respond.min.js"></script>
+    <![endif]--> 
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+</style>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</head>
+<body>
+<ul class="topnav" id="myTopnav">
+<div class="container">
+  <li><a href="#">الرئيسية</a></li>
+  <li><a href="#/arabic-series">عربى</a></li>
+  <li><a href="#/turkish-series">تركى </a></li>
+  <li><a href="#/american-series">أمريكى</a></li>
+  <li><a href="#/indian-series">ههندى</a></li>
+  <li class="icon">
+    <a  onclick="myFunction()">&#9776;</a>
+  </li>
+</div>
+</ul>
+    <div class="series-app">
+      <div style="width: 100%; min-height: 100vh; background-color: #fff;" class="tabs">
+
+             <div ng-view></div>
+   
+        
+
+      </div>
+    </div>
+
+    <!-- JavaScript ===> General files -->
+    <script type="text/javascript" src="/js/generals/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/js/generals/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/generals/angular.min.js"></script>
+    <script type="text/javascript" src='/js/generals/angular-route.min.js'></script>
+    <!-- JavaScript ===> App Files -->
+    <script type="text/javascript" src="/js/app.js"></script>
+    <script type="text/javascript" src="/js/approutes.js"></script>
+  
+</body>
+</html>
